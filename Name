@@ -1,12 +1,12 @@
 import os
 def rename():
-   i=1 
-   path="C:\\Users\\lavanya\\PycharmProjects\\project\\pictures\\"
+   i=1
+   path='C:\\Users\\lavanya\\PycharmProjects\\project\\pictures\\'
    for filename in os.listdir(path):
-       picturenames=f"pic(i).jpg" 
-       source=path+filename 
-       destination=path+picturenames 
-       os.rename(src,destination) 
-       i=i+1 
-if _name_=="_main_": 
-   rename()
+       picturenames=f"pic{i}.jpg"
+       src=path+filename
+       dest=path+picturenames
+       os.rename(src,dest)
+       i=i+1
+if __name__=="__main__":
+   rename() 
